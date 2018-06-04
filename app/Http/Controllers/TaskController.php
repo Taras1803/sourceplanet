@@ -25,13 +25,12 @@ class TaskController extends Controller
      */
     public function create()
     {
-        $task = new Task;
-        $task->test = $_POST['test'];
-        $task->description = $_POST['description'];
-        $task->preview = $_POST['preview'];
-        $task->save();
-
-        return view('test1',"задача добавлена");
+            $task = new Task;
+            $task->test = $_POST['test'];
+            $task->description = $_POST['description'];
+            $task->preview = $_POST['preview'];
+            $task->save();
+        return view('test1');
     }
 
     /**

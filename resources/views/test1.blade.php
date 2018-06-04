@@ -1,14 +1,16 @@
 @extends('welcome')
+@section('sidebar1')
+@endsection
 @section('content')
-    <form action="" method="post">
-        <legend>task_test_code</legend>
-                <textarea id="1" style="height: 350px; width: 50%;" name="test"></textarea>
-        <br><br>
+    <form action="createtask" method="post">
         <legend>description_task</legend>
-                <textarea name="description"  id="2" cols="30" rows="10"></textarea>
-        <br>
+        <textarea class="t" name="description"  id="1" cols="80" rows="10">{{$task->description}}</textarea>
+        <br><br>
+        <legend>task_test_code</legend>
+                <textarea class="t" name="test" id="2" cols="80" rows="20">{{$task->test}}</textarea>
+        <br><br>
         <legend>preview_task</legend>
-                 <textarea name="preview" id="3" cols="30" rows="10"></textarea>
+                 <textarea class="t" name="preview" id="3" cols="80" rows="10">{{$task->preview}}</textarea>
             <br>
             <input type="submit"  value="Отправить" title="Отправить данные формы">
     </form>

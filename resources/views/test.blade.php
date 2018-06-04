@@ -7,7 +7,7 @@
 
         <legend>php</legend>
         <p class="t1">{{$task->description}}</p>
-        <textarea id="example_1" style="height: 350px; width: 50%;" name="code">
+        <textarea id="example_1" cols="80" rows="20" name="code">
             @if(isset($post))
                {{$post}}
             @else
@@ -16,7 +16,7 @@
         </textarea>
         <br>
         <input type="submit"  value="Отправить" title="Отправить данные формы">
-        <a href="../test/{{$task->id+1}}">следующее</a>
+        <a href="../test/{{$task->id+1}}" class="t1">следующее</a>
 
     @if(isset($post))
         <p class="t1">{{$post}}</p>

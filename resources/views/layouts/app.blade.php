@@ -45,7 +45,7 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="createtask">Добавить задачу</a></li>
+                        <li><a href="create">Добавить задачу</a></li>
                         <!-- Authentication Links -->
                                  <li>  @section('sidebar')
                                              <a href="test/1">Пройти тестирование</a>

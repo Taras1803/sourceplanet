@@ -22,16 +22,25 @@
                 background: orange;
             }
             .t1 {
-                color: rgb(246, 246, 255);
+                 color: rgb(246, 246, 255);
+                 font-size:15px;
+                 font-weight: bold;
+                 font-style: italic ;
+                 text-shadow: 2px 2px 0px #000000;
+             }
+            .t {
+                color: rgb(2, 2, 8);
                 font-size:15px;
                 font-weight: bold;
                 font-style: italic ;
-                text-shadow: 2px 2px 0px #000000;
+                text-shadow: 1px 1px 0px #ffffff;
             }
             .full-height {
                 height: 100vh;
             }
-
+            textarea{
+                background-image: url("https://avatars.mds.yandex.net/get-marketpic/200038/market_x7ShKUKy1sToBfcYaXgY4w/200x200");
+            }
             .flex-center {
                 align-items: center;
                 display: flex;
@@ -76,10 +85,12 @@
         <div class=" position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
-                    @section('sidebar')
-                        <a href="test/1">Пройти тестирование</a>
-                    @show
-                        <a href="createtask">Добавить задачу</a>
+                        @section('sidebar')
+                            <a href="test/1">Пройти тестирование</a>
+                        @show
+                        @section('sidebar1')
+                             <a href="../create">Добавить задачу</a>
+                        @show
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
