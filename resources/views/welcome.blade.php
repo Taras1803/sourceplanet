@@ -9,6 +9,14 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <!-- Styles -->
+        <link rel="stylesheet" href="{{asset('css/all.css')}}" type="text/css">
+        <link rel="stylesheet" href="{{asset('css/train.css')}}" type="text/css">
+        <link rel="stylesheet" href="{{asset('css/main.css')}}" type="text/css">
+        <script type="text/javascript" src="{{asset('js/jquery-3.3.1.js')}}"></script>
+        <script src="{{asset('js/src/ace.js')}}" type="text/javascript" charset="utf-8"></script>
+        <script src="{{asset('js/src/theme-monokai.js')}}" type="text/javascript" charset="utf-8"></script>
+        <script src="{{asset('js/src/mode-php.js')}}" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="{{asset('js/action.js')}}"></script>
         <style>
             body{
                 color: #fff;
@@ -86,10 +94,10 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                         @section('sidebar')
-                            <a href="test/1">Пройти тестирование</a>
+                            <a href="main">Пройти тестирование</a>
                         @show
                         @section('sidebar1')
-                             <a href="../create">Добавить задачу</a>
+                             <a href="create">Добавить задачу</a>
                         @show
                     @auth
                         <a href="{{ url('/home') }}">Home</a>

@@ -48,7 +48,7 @@
                         <li><a href="create">Добавить задачу</a></li>
                         <!-- Authentication Links -->
                                  <li>  @section('sidebar')
-                                             <a href="test/1">Пройти тестирование</a>
+                                             <a href="main">Пройти тестирование</a>
                                         @show
                                 </li>
                         @guest
